@@ -37,10 +37,5 @@ public class OrderController {
         return new ResponseEntity<>(service.deleteOrder(id),HttpStatus.OK);
     }
 
-    @PutMapping("/order")
-    private Order update(@RequestBody Order order)
-    {
-        service.saveOrUpdate(order);
-        return order;
-    }
+   
 }
