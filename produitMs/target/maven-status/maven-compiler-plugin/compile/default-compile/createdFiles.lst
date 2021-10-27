@@ -1,0 +1,5 @@
+com\esprit\produit\ProduitMsApplication.class
+com\esprit\produit\Produit.class
+com\esprit\produit\ProduitRepos.class
+com\esprit\produit\ProduitRestAPI.class
+com\esprit\produit\ProduitService.class
