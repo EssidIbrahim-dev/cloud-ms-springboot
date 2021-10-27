@@ -25,18 +25,18 @@ public class FactureRestAPI {
 	  @Autowired
 	    private FactureService service;
 
-	    @GetMapping ("/factures")
+	    @GetMapping ("/all")
 	    private List<FactureEntity> getAllfactures()
 	    {
 	        return service.getAllfactures();
 	    }
-	    @PutMapping("/facture")
+	    @PutMapping("/update")
 	    private FactureEntity update(@RequestBody FactureEntity facture)
 	    {
 	        service.saveOrUpdate(facture);
 	        return facture;
 	    }
-	    @DeleteMapping(value="/{id}",produces= MediaType.APPLICATION_JSON_VALUE)
+	    @DeleteMapping(value="/delete/{id}",produces= MediaType.APPLICATION_JSON_VALUE)
 	    @ResponseStatus(HttpStatus.CREATED)
 	    public ResponseEntity<String> deleteCandidate(@PathVariable(value= "id") int id){
 	        return new ResponseEntity<>(service.deletefacture(id),HttpStatus.OK);
