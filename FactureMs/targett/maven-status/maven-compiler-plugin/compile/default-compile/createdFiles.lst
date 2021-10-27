@@ -1,0 +1,5 @@
+com\example\demo\FactureEntity.class
+com\example\demo\FactureMicroserviceApplication.class
+com\example\demo\FactureService.class
+com\example\demo\FactureRestAPI.class
+com\example\demo\FactureRepository.class
